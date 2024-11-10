@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial' serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.page_wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/*left_side*/
+
+.left-side {
+    width: 30%;
+    background-color: #3f6592;
+    padding: 30px;
+}
+
+.left-side_photo {
+    margin-bottom: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.left-side_content {
+    margin-bottom: 20px;
+}
+
+.left-side_title {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    width: calc(100% + 30px);
+}
+
+.left-side_item:not(:last-child),
+.content_lang:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.left-side_subtitle {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.mb_interest {
+    margin-bottom: 15px;
+}
+
+.left-side_text {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content_lang {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*right_side*/
+
+.right-side {
+    width: 70%;
+    background-color: white;
+    padding: 40px 30px;
+}
+
+.right-side_title {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
+}
+
+.right-side_content {
+    margin-bottom: 20px;
+}
+
+.right-side_item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.right-side_subtitle {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.right-side_date {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.right-side_place {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.right-side_text {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.right-side_inner {
+    margin-bottom: 20px;
+}
