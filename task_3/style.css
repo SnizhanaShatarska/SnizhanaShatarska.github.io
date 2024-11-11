@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid grey;
+}
+
+tr:nth-child(odd) td:nth-child(even){
+    background: LightGrey;
+}
+
+tr:nth-child(even) td:nth-child(odd){
+    background: LightGrey;
+}
+td {
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    text-align: center;
+}
