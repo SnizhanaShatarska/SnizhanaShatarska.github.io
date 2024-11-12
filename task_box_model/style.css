@@ -1,39 +1,42 @@
-/* 1 спосіб
-div {
-    width: 25px;
-    height: 25px;
+.way {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* 1 спосіб*/
+.way_1 {
+    width: 30px;
+    height: 30px;
     padding: 10px;
-    border: 20px solid yellow;
+    border: 30px solid yellow;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 20px blue;
+    box-shadow: 0px 0px 0px 30px blue;
 
-    margin: 50px auto;
+    margin: 50px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-*/
 
-/* 2 спосіб
-div {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+
+/* 2 спосіб*/
+.way_2 {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 20px yellow,
-                0px 0px 0px 40px blue;
-    margin: 50px auto;
+    box-shadow: 0px 0px 0px 30px yellow,
+                0px 0px 0px 60px blue;
+    margin: 80px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-*/
+
 
 /* 3 спосіб*/
-div {
+.way_3 {
     width: 130px;
     height: 130px;
-    margin: 100px auto;
+    margin: 50px 50px;
 
     border-radius: 50%;
     background-color: white;
@@ -45,7 +48,7 @@ div {
 
 }
 
-div:before {
+.way_3:before {
     content: '';
     display: flex;
     position: absolute;
@@ -57,7 +60,7 @@ div:before {
     height: 50px;
     border-radius: 50%;
 }
-div:after {
+.way_3:after {
     content: '';
     display: flex;
     position: absolute;
