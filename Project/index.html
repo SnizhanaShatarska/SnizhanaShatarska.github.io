@@ -7,10 +7,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/_variables.css">
-    <link rel="stylesheet" href="styles/_main.css">
-    <link rel="stylesheet" href="styles/_header.css">
-    <link rel="stylesheet" href="styles/_footer.css">
   </head>
   <body>
   <!-- Header -->
@@ -133,6 +129,7 @@
       <div class="section-desc">
         <h2 class="section-title">Featured Properties</h2>
         <p class="section-text">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein.</p>
+        <a href="#" class="btn mobile-hide">View All Properties</a>
       </div>
       <div class="section-slider">
         <div class="section-slider-item">
@@ -250,10 +247,18 @@
         </div><!-- /.section-slider-item -->
 
       </div><!-- /.section-slider -->
-      <a href="#" class="btn">View All Properties</a>
-        <div class="swipe">
-
+      <div class="section-slider__swipe">
+        <a href="#" class="btn desktop-hide">View All Properties</a>
+         <div class="swipe-content">
+          <div class="swipe swipe_l">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <span>01 of 60</span>
+          <div class="swipe swipe_r">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
         </div>
+      </div>
 
     </div><!-- /.container -->
   </section>
