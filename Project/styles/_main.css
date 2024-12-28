@@ -1,0 +1,618 @@
+.section-title {
+  margin-bottom: 6px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.section-text,
+.property-price-title{
+  margin-bottom: 40px;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--medium-color);
+}
+
+/*----- first-screen ------*/
+.first-screen-img {
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  min-height: 302px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.first-screen-img img {
+/*
+  height: 100%;
+  object-fit: cover;
+*/
+  background-color: var(--bg-color);
+  background-image: url(../images/bg-abstract.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.first-screen-icon {
+  width: 117px;
+  height: 117px;
+  background-image: url(../images/dydp-icon.png);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+}
+
+.first-screen-content {
+  margin: 56px 0 40px;
+}
+
+.first-screen-content a.btn__light {
+  display: block;
+  margin-top: 16px;
+}
+
+.first-screen-content .section-title {
+  margin-bottom: 16px;
+  line-height: 120%;
+}
+
+.first-screen-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 12px;
+  margin-top: 40px;
+}
+
+.item-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.item-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.item-3 {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.first-screen-facts-item {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-color);
+}
+
+.first-screen-facts-item .section-text {
+  margin-bottom: 0;
+}
+
+.first-screen-facts-item-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+/*----- services ------*/
+
+.services {
+  margin: 0 16px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 0px 0px 4px #191919;
+  border-radius: 12px;
+}
+
+.services-item {
+  width: calc(50% - 5px);
+  position: relative;
+  padding: 20px 14px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.services-item::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  background-image: url(../images/arrow-up-right.svg);
+  width: 26px;
+  height: 26px;
+  background-size: 100%;
+}
+
+.services-item-icon {
+  display: inline-block;
+  margin-bottom: 14px;
+  height: 48px;
+  width: 48px;
+  background: url(../images/propos-icon.png);
+  background-size: 200%;
+}
+
+.icon-home {
+  background-position: 48px 48px;
+}
+
+.icon-value {
+  background-position: 0 96px;
+}
+
+.icon-management {
+  background-position: 48px 96px;
+}
+
+.icon-investment {
+  background-position: 96px 48px;
+}
+
+.services-item-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+/*----- section-slider ------*/
+.section-slider {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-slider-item {
+  max-width: 512px;
+/*  min-width: 358px;*/
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.section-slider-item-title,
+.property-price-num {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 2px;
+}
+
+.section-slider-item .section-text {
+  margin-bottom: 0;
+}
+
+.section-slider-item p.section-text a {
+  color: var(--light-color);
+  text-decoration: underline;
+}
+
+/*----- property ------*/
+.property-img {
+  width: 100%;
+  max-height: 210px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.property-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.property-icon {
+  display: flex;
+  padding: 6px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 28px;
+  background-color: var(--bg-color);
+  align-items: center;
+  justify-content: center;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.icon-bed,
+.icon-bath,
+.icon-villa {
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/property-img/property_sprites.png);
+  background-size: 600%;
+}
+
+.icon-bed {
+  background-position: 70px 30px;
+}
+.icon-bath {
+  background-position: 30px 30px;
+}
+.icon-villa {
+  background-position: -10px 30px;
+}
+
+.property-desc {
+  grid-area: description;
+}
+.property-icons {
+  grid-area: icons;
+}
+.property-price {
+  grid-area: price;
+  align-self: center;
+}
+.property-btn {
+  grid-area: btn;
+  justify-self: end;
+  align-self: center;
+}
+
+.property-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "description description description"
+    "icons icons icons"
+    "price btn btn";
+}
+
+.property-price-title {
+  margin-bottom: 0;
+}
+
+.property-price-num {
+  margin-bottom: 0;
+}
+
+
+
+
+/*------------------ Media Queries -----------------------*/
+
+@media (min-width: 1280px) {
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 2.375rem;
+  }
+
+  .section-text,
+  .property-price-title{
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  /*----- first-screen ------*/
+  main .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    overflow: hidden;
+  }
+
+  .first-screen-img {
+    max-height: 622px;
+    margin-top: 0;
+    border-radius: 0;
+    border: none;
+    width: 50%;
+    order: 2;
+  }
+
+  .first-screen-img img {
+
+  }
+
+  .first-screen-content {
+    margin: auto;
+    width: 50%;
+    order: 1;
+  }
+
+  .first-screen-icon {
+    width: 129px;
+    height: 129px;
+    top: 95px;
+    left: -64px;
+  }
+
+  .first-screen-content h1.section-title {
+    margin-bottom: 20px;
+    font-size: 2.875rem;
+  }
+
+  .first-screen-content p.section-text {
+    margin-bottom: 50px;
+  }
+
+  .first-screen-content a.btn__light {
+    display: inline-block;
+    margin-left: 16px;
+    margin-top: 0;
+  }
+
+  .first-screen-facts {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 16px;
+    margin-top: 50px;
+  }
+
+  .item-1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .item-2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .item-3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .first-screen-facts-item {
+    width: 100%;
+    padding: 14px 20px;
+    justify-items: left;
+  }
+
+  .first-screen-facts-item p.section-text {
+    margin-bottom: 0;
+  }
+
+  /*----- services ------*/
+  .services {
+    margin-bottom: 120px;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .services-item {
+    width: calc(25% - 8px);
+    padding: 30px 16px;
+  }
+
+  .services-item::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .services-item-icon {
+    margin-bottom: 16px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon-home {
+    background-position: 60px 60px;
+  }
+
+  .icon-value {
+    background-position: 0 120px;
+  }
+
+  .icon-management {
+    background-position: 60px 120px;
+  }
+
+  .icon-investment {
+    background-position: 120px 60px;
+  }
+
+  .services-item-title {
+    font-size: 1rem;
+  }
+
+
+  /*----- section-slider ------*/
+  .section-desc{
+    margin-bottom: 60px;
+  }
+
+  .section-slider {
+    padding-bottom: 40px;
+  }
+
+  .section-slider-item {
+    padding: 30px;
+  }
+
+  .section-slider-item-title,
+  .property-price-num {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+  }
+
+  /*----- property ------*/
+  .property-img {
+    max-height: 255px;
+    margin-bottom: 20px;
+  }
+
+  .property-content {
+    grid-row-gap: 24px;
+  }
+
+  .property-price-num {
+    margin-bottom: 0;
+  }
+
+
+}
+
+@media (min-width: 1920px) {
+  .section-title {
+    margin-bottom: 14px;
+    font-size: 3rem;
+  }
+
+  .section-text,
+  .property-price-title{
+    font-size: 1.125rem;
+  }
+
+  /*----- first-screen ------*/
+  .first-screen-img {
+    max-height: 814px;
+  }
+
+  .first-screen-img img {
+
+  }
+
+  main .container {
+    gap: 80px;
+  }
+
+  .first-screen-icon {
+    width: 175px;
+    height: 175px;
+    top: 144px;
+    left: -87px;
+  }
+
+  .first-screen-content h1.section-title {
+    margin-bottom: 24px;
+    font-size: 3.75rem;
+  }
+
+  .first-screen-content p.section-text {
+    margin-bottom: 60px;
+  }
+
+  .first-screen-content a.btn__light {
+    margin-left: 20px;
+  }
+
+  .first-screen-facts {
+    grid-gap: 20px;
+    margin-top: 60px;
+  }
+
+  .first-screen-facts-item {
+    padding: 15px 24px;
+  }
+
+  .first-screen-facts-item p.section-text {
+    margin-bottom: 0;
+  }
+
+  .first-screen-facts-item-number {
+    font-size: 2.5rem;
+  }
+
+  /*----- services ------*/
+  .services {
+    margin-bottom: 120px;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .services-item {
+    width: calc(25% - 16px);
+    padding: 40px 20px;
+  }
+
+  .services-item-icon {
+    margin-bottom: 20px;
+    height: 82px;
+    width: 82px;
+  }
+
+  .icon-home {
+    background-position: 82px 82px;
+  }
+
+  .icon-value {
+    background-position: 0 164px;
+  }
+
+  .icon-management {
+    background-position: 82px 164px;
+  }
+
+  .icon-investment {
+    background-position: 164px 82px;
+  }
+
+  .services-item-title {
+    font-size: 1.25rem;
+  }
+
+  /*----- section-slider ------*/
+  .section-desc{
+    margin-bottom: 80px;
+  }
+
+  .section-slider {
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+  }
+
+  .section-slider-item {
+    padding: 40px;
+  }
+
+  .section-slider-item-title,
+  .property-price-num {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+
+  .property-price-num {
+    margin-bottom: 0;
+  }
+
+  /*----- property ------*/
+  .property-img {
+    max-height: 318px;
+    margin-bottom: 30px;
+  }
+
+  .property-content {
+    grid-row-gap: 30px;
+  }
+
+  .property-icons {
+    gap: 10px;
+  }
+
+  .property-icon {
+    font-size: 1.125rem;
+    padding: 8px 14px;
+  }
+
+  .icon-bed,
+  .icon-bath,
+  .icon-villa {
+    width: 24px;
+    height: 24px;
+  }
+
+  .icon-bed {
+    background-position: 84px 38px;
+  }
+  .icon-bath {
+    background-position: 34px 38px;
+  }
+  .icon-villa {
+    background-position: -12px 38px;
+  }
+
+
+}
+
+/*----- End of Media Queries ------*/

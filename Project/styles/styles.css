@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("_variables.css");
+@import url("_header.css");
+@import url("_main.css");
+@import url("_footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--light-color);
+  background-color: var(--main-bg-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1312px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  margin: auto 0;
+}
+
+.logo__img {
+  width: 28px;
+}
+
+.logo__title {
+  margin-left: 6px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color:var(--light-color);
+}
+
+ .mobile-hide  {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show-menu {
+  left: 0;
+  transition: all .5s ease;
+}
+
+.btn {
+  display: inline-block;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  text-align: center;
+  color: inherit;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+}
+
+.btn__light {
+  background-color: var(--main-color);
+  border: none;
+}
+
+.btn__no-bg {
+  display: block;
+  background-color: transparent;
+}
+
+/*----- Media Queries ------*/
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 0;
+  }
+
+  .mobile-hide  {
+    display: block;
+  }
+
+  .btn__no-bg {
+    display: inline-block;
+  }
+
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1596px;
+ }
+
+  .btn {
+    font-size: 1.125rem;
+    padding: 18px 24px;
+    border-radius: 10px;
+  }
+
+
+}
+
+/*----- End of Media Queries ------*/
