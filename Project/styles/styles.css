@@ -104,12 +104,6 @@ ul {
   display: none;
 }
 
-.show-menu {
-  left: 0;
-  transition: all .5s ease;
-}
-
-
 /*----------------------Header---------------------*/
 .header-banner {
   background:var(--bg-color) url(../images/bg-abstract.svg) center no-repeat;
@@ -184,6 +178,12 @@ header .container {
 .mobile-menu-list li > a {
   display: block;
 }
+
+.show-menu {
+  left: 0;
+  transition: all .5s ease;
+}
+
 
 /*---------------------MAIN PART---------------------*/
 .section-title {
@@ -352,9 +352,12 @@ header .container {
 }
 
 /*----- section-slider ------*/
+.sectiom-mb {
+  margin-bottom: 80px;
+}
+
 .section-slider {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 16px;
   padding-bottom: 30px;
@@ -362,8 +365,7 @@ header .container {
 }
 
 .section-slider-item {
-  max-width: 512px;
-/*  min-width: 358px;*/
+  width: 100%;
   padding: 24px;
   border: 1px solid var(--border-color);
   border-radius: 10px;
@@ -500,7 +502,110 @@ header .container {
   margin-bottom: 0;
 }
 
-/*---------------------End of MAIN PART---------------*/
+/*----- clients ------*/
+.client-item,
+.asked-item {
+  padding: 30px;
+}
+
+.icons-star i {
+  padding: 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  background-color: var(--bg-color);
+  color: #FFE500;
+  margin-right: 8px;
+}
+
+.icons-star,
+.client-item-desc {
+  margin-bottom: 24px;
+}
+
+.client-item .section-slider-item-title {
+  margin-bottom: 6px;
+}
+
+.client-item p.section-text {
+  color: inherit;
+}
+
+.client-item-info {
+  display: flex;
+  align-items: center;
+}
+
+.client-item-info-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.client-item-info-img img {
+  object-fit: cover;
+}
+
+.client-item-info-name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.client-item-info-city {
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--medium-color);
+}
+
+/*-------------Asked---------------*/
+.asked-item .section-slider-item-title,
+.asked-item p.section-text {
+  margin-bottom: 20px;
+}
+
+.asked-item .btn {
+  display: block;
+}
+
+/*----------section-bg----------*/
+.section-bg {
+  margin-top: 80px;
+  padding: 50px 0;
+  position: relative;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/*
+.section-bg::before,
+.section-bg::after {
+  content: '';
+  position: absolute;
+  background-image: url(../images/Abstract_down.svg);
+  background-repeat: no-repeat;
+}
+
+.section-bg::before {
+  width: 522px;
+height: 284px;
+left: 263px;
+top: -109px;
+
+transform: rotate(90deg);
+}
+*/
+.section-bg p.section-text {
+  margin-bottom: 30px;
+}
+.section-bg .btn {
+  display: block;
+}
+
+
+/*------------------End of MAIN PART------------*/
 
 /*---------------------Footer---------------*/
 footer nav.logo {
@@ -642,7 +747,7 @@ footer form input {
 
 
 /*------------------------ Media Queries ----------------*/
-
+/*========================================================*/
 @media (min-width: 1280px) {
   .container {
     padding: 0;
@@ -860,6 +965,10 @@ footer form input {
 
 
   /*----- section-slider ------*/
+  .sectiom-mb {
+    margin-bottom: 120px;
+  }
+
   .section-desc{
     margin-bottom: 60px;
     position: relative;
@@ -870,10 +979,12 @@ footer form input {
   }
 
   .section-slider {
+    gap: 20px;
     padding-bottom: 40px;
   }
 
   .section-slider-item {
+    width: calc(33.333333% - 15px);
     padding: 30px;
   }
 
@@ -915,6 +1026,54 @@ footer form input {
   }
 
   .property-price-num {
+    margin-bottom: 0;
+  }
+
+  /*----- clients ------*/
+  .client-item,
+  .asked-item {
+    padding: 40px;
+  }
+
+  .icons-star i {
+    padding: 8px;
+  }
+
+  .icons-star,
+  .client-item-desc {
+    margin-bottom: 30px;
+  }
+
+  .client-item .section-slider-item-title {
+    margin-bottom: 10px;
+  }
+
+  .client-item-info-name {
+    font-size: 1.125rem;
+  }
+
+  .client-item-info-city {
+    font-size: 1rem;
+  }
+
+  /*-------------Asked---------------*/
+  .asked-item .section-slider-item-title,
+  .asked-item p.section-text {
+    margin-bottom: 24px;
+  }
+
+  .asked-item .btn {
+    display: inline-block;
+  }
+
+  /*----------section-bg----------*/
+  .section-bg {
+    margin-top: 72px;
+    padding: 60px 0;
+  }
+
+  .section-bg .section-desc,
+  .section-bg p.section-text {
     margin-bottom: 0;
   }
   /*---------------------End of MAIN PART---------------------*/
@@ -1032,10 +1191,9 @@ footer form input {
     margin-left: 20px;
   }
 
-
 }
 
-/*-----------------------------------------------------------*/
+/*---------------------------------------------------------*/
 @media (min-width: 1920px) {
   .container {
     max-width: 1596px;
@@ -1193,6 +1351,10 @@ footer form input {
   }
 
   /*----- section-slider ------*/
+  .sectiom-mb {
+    margin-bottom: 150px;
+  }
+
   .section-desc{
     margin-bottom: 80px;
   }
@@ -1252,7 +1414,53 @@ footer form input {
     background-position: -12px 38px;
   }
 
-  /*---------------------End of MAIN PART---------------------*/
+  /*----- clients ------*/
+  .client-item,
+  .asked-item {
+    padding: 50px;
+  }
+
+  .icons-star i {
+    padding: 10px;
+  }
+
+  .icons-star,
+  .client-item-desc {
+    margin-bottom: 40px;
+  }
+
+  .client-item .section-slider-item-title {
+    margin-bottom: 14px;
+  }
+
+  .client-item-info-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+  }
+
+  .client-item-info-name {
+    font-size: 1.25rem;
+  }
+
+  .client-item-info-city {
+    font-size: 1.125rem;
+    margin-top: 2px;
+  }
+
+  /*-------------Asked---------------*/
+  .asked-item .section-slider-item-title,
+  .asked-item p.section-text {
+    margin-bottom: 30px;
+  }
+
+  /*----------section-bg----------*/
+  .section-bg {
+    margin-top: 96px;
+    padding: 100px 0;
+  }
+  /*------------------End of MAIN PART---------------*/
+
   /*---------------------Footer---------------*/
   footer nav.logo {
     margin-bottom: 30px;
