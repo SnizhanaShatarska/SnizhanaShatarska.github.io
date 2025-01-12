@@ -6,9 +6,14 @@
     <title>Estatein</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+
+  <button id="btnScrollTop" class="btn-scroll-top">
+    <i class="fa-solid fa-caret-up"></i>
+  </button>
   <!-- Header -->
   <div class="header-banner">
     <div class="container">
@@ -20,7 +25,7 @@
     </div><!-- /.container -->
   </div>
 
-  <header>
+  <header id="header">
     <div class="container">
       <nav class="logo">
         <div class="logo__img">
@@ -74,7 +79,7 @@
   </header>
 
   <!-- first-screen -->
-  <main>
+  <main id="firstScreen">
     <div class="container">
       <div class="first-screen-img">
         <img src="images/first-screen-img.png" alt="abstract">
@@ -131,134 +136,178 @@
         <p class="section-text">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein.</p>
         <a href="#" class="btn mobile-hide">View All Properties</a>
       </div>
-      <div class="section-slider">
-        <div class="section-slider-item">
-          <div class="property-img">
-            <img src="images/property-img/img-cottage.jpg" alt="cottage">
+      <div class="swiper">
+        <div class="section-slider swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="section-slider-item">
+              <div class="property-img">
+                <img src="images/property-img/img-cottage.jpg" alt="cottage">
+              </div>
+              <div class="property-content">
+                <div class="property-desc">
+                  <div class="section-slider-item-title">
+                    Rustic Retreat Cottage
+                  </div>
+                  <p class="section-text">
+                    An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
+                    <a href="#">Learn More</a>
+                  </p>
+                </div>
+                <div class="property-icons">
+                  <div class="property-icon">
+                    <div class="icon-bed"></div>
+                    <span>4-Bedroom</span>
+                  </div>
+                  <div class="property-icon">
+                    <div class="icon-bath"></div>
+                    <span>3-Bathroom</span>
+                  </div>
+                  <div class="property-icon">
+                    <div class="icon-villa"></div>
+                    <span>Villa</span>
+                  </div>
+                </div>
+                <div class="property-price">
+                  <div class="property-price-title">Price</div>
+                  <div class="property-price-num">$550,000</div>
+                </div>
+                <div class="property-btn">
+                  <a href="#" class="btn btn__light">View Property Details</a>
+                </div>
+              </div><!-- /.property-content -->
+            </div><!-- /.section-slider-item -->
           </div>
-          <div class="property-content">
-            <div class="property-desc">
-              <div class="section-slider-item-title">
-                Rustic Retreat Cottage
+          <div class="swiper-slide">
+            <div class="section-slider-item">
+              <div class="property-img">
+                <img src="images/property-img/img-villa.jpg" alt="cottage">
               </div>
-              <p class="section-text">
-                An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
-                <a href="#">Learn More</a>
-              </p>
-            </div>
-            <div class="property-icons">
-              <div class="property-icon">
-                <div class="icon-bed"></div>
-                <span>4-Bedroom</span>
-              </div>
-              <div class="property-icon">
-                <div class="icon-bath"></div>
-                <span>3-Bathroom</span>
-              </div>
-              <div class="property-icon">
-                <div class="icon-villa"></div>
-                <span>Villa</span>
-              </div>
-            </div>
-            <div class="property-price">
-              <div class="property-price-title">Price</div>
-              <div class="property-price-num">$550,000</div>
-            </div>
-            <div class="property-btn">
-              <a href="#" class="btn btn__light">View Property Details</a>
-            </div>
-          </div><!-- /.property-content -->
-        </div><!-- /.section-slider-item -->
-
-        <div class="section-slider-item">
-          <div class="property-img">
-            <img src="images/property-img/img-villa.jpg" alt="cottage">
+              <div class="property-content">
+                <div class="property-desc">
+                  <div class="section-slider-item-title">
+                    Seaside Serenity Villa
+                  </div>
+                  <p class="section-text">
+                    A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...
+                    <a href="#">Learn More</a>
+                  </p>
+                </div>
+                <div class="property-icons">
+                  <div class="property-icon">
+                    <div class="icon-bed"></div>
+                    <span>4-Bedroom</span>
+                  </div>
+                  <div class="property-icon">
+                    <div class="icon-bath"></div>
+                    <span>3-Bathroom</span>
+                  </div>
+                  <div class="property-icon">
+                    <div class="icon-villa"></div>
+                    <span>Villa</span>
+                  </div>
+                </div>
+                <div class="property-price">
+                  <div class="property-price-title">Price</div>
+                  <div class="property-price-num">$550,000</div>
+                </div>
+                <div class="property-btn">
+                  <a href="#" class="btn btn__light">View Property Details</a>
+                </div>
+              </div><!-- /.property-content -->
+            </div><!-- /.section-slider-item -->
           </div>
-          <div class="property-content">
-            <div class="property-desc">
-              <div class="section-slider-item-title">
-                Seaside Serenity Villa
+          <div class="swiper-slide">
+            <div class="section-slider-item">
+              <div class="property-img">
+                <img src="images/property-img/img-haven.jpg" alt="cottage">
               </div>
-              <p class="section-text">
-                A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...
-                <a href="#">Learn More</a>
-              </p>
-            </div>
-            <div class="property-icons">
-              <div class="property-icon">
-                <div class="icon-bed"></div>
-                <span>4-Bedroom</span>
-              </div>
-              <div class="property-icon">
-                <div class="icon-bath"></div>
-                <span>3-Bathroom</span>
-              </div>
-              <div class="property-icon">
-                <div class="icon-villa"></div>
-                <span>Villa</span>
-              </div>
-            </div>
-            <div class="property-price">
-              <div class="property-price-title">Price</div>
-              <div class="property-price-num">$550,000</div>
-            </div>
-            <div class="property-btn">
-              <a href="#" class="btn btn__light">View Property Details</a>
-            </div>
-          </div><!-- /.property-content -->
-        </div><!-- /.section-slider-item -->
-
-        <div class="section-slider-item">
-          <div class="property-img">
-            <img src="images/property-img/img-haven.jpg" alt="cottage">
+              <div class="property-content">
+                <div class="property-desc">
+                  <div class="section-slider-item-title">
+                    Metropolitan Haven
+                  </div>
+                  <p class="section-text">
+                    A chic and fully-furnished 2-bedroom apartment with panoramic city views...
+                    <a href="#">Learn More</a>
+                  </p>
+                </div>
+                <div class="property-icons">
+                  <div class="property-icon">
+                    <div class="icon-bed"></div>
+                    <span>2-Bedroom</span>
+                  </div>
+                  <div class="property-icon">
+                    <div class="icon-bath"></div>
+                    <span>2-Bathroom</span>
+                  </div>
+                  <div class="property-icon">
+                    <div class="icon-villa"></div>
+                    <span>Villa</span>
+                  </div>
+                </div>
+                <div class="property-price">
+                  <div class="property-price-title">Price</div>
+                  <div class="property-price-num">$550,000</div>
+                </div>
+                <div class="property-btn">
+                  <a href="#" class="btn btn__light">View Property Details</a>
+                </div>
+              </div><!-- /.property-content -->
+            </div><!-- /.section-slider-item -->
           </div>
-          <div class="property-content">
-            <div class="property-desc">
-              <div class="section-slider-item-title">
-                Metropolitan Haven
+          <div class="swiper-slide">
+            <div class="section-slider-item">
+              <div class="property-img">
+                <img src="images/property-img/img-villa.jpg" alt="cottage">
               </div>
-              <p class="section-text">
-                A chic and fully-furnished 2-bedroom apartment with panoramic city views...
-                <a href="#">Learn More</a>
-              </p>
-            </div>
-            <div class="property-icons">
-              <div class="property-icon">
-                <div class="icon-bed"></div>
-                <span>2-Bedroom</span>
-              </div>
-              <div class="property-icon">
-                <div class="icon-bath"></div>
-                <span>2-Bathroom</span>
-              </div>
-              <div class="property-icon">
-                <div class="icon-villa"></div>
-                <span>Villa</span>
-              </div>
-            </div>
-            <div class="property-price">
-              <div class="property-price-title">Price</div>
-              <div class="property-price-num">$550,000</div>
-            </div>
-            <div class="property-btn">
-              <a href="#" class="btn btn__light">View Property Details</a>
-            </div>
-          </div><!-- /.property-content -->
-        </div><!-- /.section-slider-item -->
-
-      </div><!-- /.section-slider -->
+              <div class="property-content">
+                <div class="property-desc">
+                  <div class="section-slider-item-title">
+                    Seaside Serenity Villa
+                  </div>
+                  <p class="section-text">
+                    A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...
+                    <a href="#">Learn More</a>
+                  </p>
+                </div>
+                <div class="property-icons">
+                  <div class="property-icon">
+                    <div class="icon-bed"></div>
+                    <span>4-Bedroom</span>
+                  </div>
+                  <div class="property-icon">
+                    <div class="icon-bath"></div>
+                    <span>3-Bathroom</span>
+                  </div>
+                  <div class="property-icon">
+                    <div class="icon-villa"></div>
+                    <span>Villa</span>
+                  </div>
+                </div>
+                <div class="property-price">
+                  <div class="property-price-title">Price</div>
+                  <div class="property-price-num">$550,000</div>
+                </div>
+                <div class="property-btn">
+                  <a href="#" class="btn btn__light">View Property Details</a>
+                </div>
+              </div><!-- /.property-content -->
+            </div><!-- /.section-slider-item -->
+          </div>
+        </div><!-- /.section-slider -->
       <div class="section-slider__swipe">
-        <a href="#" class="btn desktop-hide">View All Properties</a>
-         <div class="swipe-content">
-          <div class="swipe swipe_l">
-            <i class="fa-solid fa-arrow-left"></i>
-          </div>
-          <span>01 of 60</span>
-          <div class="swipe swipe_r">
-            <i class="fa-solid fa-arrow-right"></i>
+        <a href="#" class="btn desktop-hide">View All FAQ’s</a>
+          <div class="swipe-content">
+            <div class="swipe swipe_l">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <span class="custom-swiper-pagination"></span>
+            <div class="swipe swipe_r">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </div>
         </div>
-      </div>
+      </div><!-- /.swiper -->
 
     </div><!-- /.container -->
   </section>
@@ -271,100 +320,135 @@
         <p class="section-text">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
         <a href="#" class="btn mobile-hide">View All Testimonials</a>
       </div>
-      <div class="section-slider">
+      <div class="swiper">
+        <div class="section-slider swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="section-slider-item client-item">
+              <div class="icons-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="client-item-desc">
+                <div class="section-slider-item-title">
+                  Exceptional Service!
+                </div>
+                <p class="section-text">
+                  Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!
+                </p>
+              </div>
+              <div class="client-item-info">
+                <div class="client-item-info-img">
+                  <img src="images/clients/client-1.jpg" alt="client_photo">
+                </div>
+                <div class="client-item-info-name">
+                  Wade Warren
+                  <div class="client-item-info-city">USA, California</div>
+                </div>
+              </div>
+            </div><!-- /.section-slider-item -->
+          </div>
+          <div class="swiper-slide">
+            <div class="section-slider-item client-item">
+              <div class="icons-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="client-item-desc">
+                <div class="section-slider-item-title">
+                  Efficient and Reliable
+                </div>
+                <p class="section-text">
+                  Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.
+                </p>
+              </div>
+              <div class="client-item-info">
+                <div class="client-item-info-img">
+                  <img src="images/clients/client-2.jpg" alt="client_photo">
+                </div>
+                <div class="client-item-info-name">
+                  Emelie Thomson
+                  <div class="client-item-info-city">USA, Florida</div>
+                </div>
+              </div>
+            </div><!-- /.section-slider-item -->
+          </div>
+          <div class="swiper-slide">
+            <div class="section-slider-item client-item">
+              <div class="icons-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="client-item-desc">
+                <div class="section-slider-item-title">
+                  Trusted Advisors
+                </div>
+                <p class="section-text">
+                  The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!
+                </p>
+              </div>
+              <div class="client-item-info">
+                <div class="client-item-info-img">
+                  <img src="images/clients/client-3.jpg" alt="client_photo">
+                </div>
+                <div class="client-item-info-name">
+                  John Mans
+                  <div class="client-item-info-city">USA, Nevada</div>
+                </div>
+              </div>
+            </div><!-- /.section-slider-item -->
+          </div>
+          <div class="swiper-slide">
+            <div class="section-slider-item client-item">
+              <div class="icons-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="client-item-desc">
+                <div class="section-slider-item-title">
+                  Efficient and Reliable
+                </div>
+                <p class="section-text">
+                  Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.
+                </p>
+              </div>
+              <div class="client-item-info">
+                <div class="client-item-info-img">
+                  <img src="images/clients/client-2.jpg" alt="client_photo">
+                </div>
+                <div class="client-item-info-name">
+                  Emelie Thomson
+                  <div class="client-item-info-city">USA, Florida</div>
+                </div>
+              </div>
+            </div><!-- /.section-slider-item -->
+          </div>
 
-        <div class="section-slider-item client-item">
-          <div class="icons-star">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <div class="client-item-desc">
-            <div class="section-slider-item-title">
-              Exceptional Service!
+        </div><!-- /.section-slider -->
+        <div class="section-slider__swipe">
+          <a href="#" class="btn desktop-hide">View All FAQ’s</a>
+           <div class="swipe-content">
+            <div class="swipe swipe_l">
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
-            <p class="section-text">
-              Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!
-            </p>
-          </div>
-          <div class="client-item-info">
-            <div class="client-item-info-img">
-              <img src="images/clients/client-1.jpg" alt="client_photo">
+            <span class="custom-swiper-pagination"></span>
+            <div class="swipe swipe_r">
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
-            <div class="client-item-info-name">
-              Wade Warren
-              <div class="client-item-info-city">USA, California</div>
-            </div>
-          </div>
-        </div><!-- /.section-slider-item -->
-        <div class="section-slider-item client-item">
-          <div class="icons-star">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <div class="client-item-desc">
-            <div class="section-slider-item-title">
-              Efficient and Reliable
-            </div>
-            <p class="section-text">
-              Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.
-            </p>
-          </div>
-          <div class="client-item-info">
-            <div class="client-item-info-img">
-              <img src="images/clients/client-2.jpg" alt="client_photo">
-            </div>
-            <div class="client-item-info-name">
-              Emelie Thomson
-              <div class="client-item-info-city">USA, Florida</div>
-            </div>
-          </div>
-        </div><!-- /.section-slider-item -->
-        <div class="section-slider-item client-item">
-          <div class="icons-star">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <div class="client-item-desc">
-            <div class="section-slider-item-title">
-              Trusted Advisors
-            </div>
-            <p class="section-text">
-              The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!
-            </p>
-          </div>
-          <div class="client-item-info">
-            <div class="client-item-info-img">
-              <img src="images/clients/client-3.jpg" alt="client_photo">
-            </div>
-            <div class="client-item-info-name">
-              John Mans
-              <div class="client-item-info-city">USA, Nevada</div>
-            </div>
-          </div>
-        </div><!-- /.section-slider-item -->
-
-      </div><!-- /.section-slider -->
-      <div class="section-slider__swipe">
-        <a href="#" class="btn desktop-hide">View All Testimonials</a>
-         <div class="swipe-content">
-          <div class="swipe swipe_l">
-            <i class="fa-solid fa-arrow-left"></i>
-          </div>
-          <span>01 of 60</span>
-          <div class="swipe swipe_r">
-            <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
-      </div>
+      </div><!-- /.swiper -->
     </div><!-- /.container -->
   </section>
 
@@ -376,49 +460,68 @@
         <p class="section-text">Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.</p>
         <a href="#" class="btn mobile-hide">View All FAQ’s</a>
       </div>
-      <div class="section-slider">
-
-        <div class="section-slider-item asked-item">
-          <div class="section-slider-item-title">
-            How do I search for properties on Estatein?
-          </div>
-          <p class="section-text">
-            Learn how to use our user-friendly search tools to find properties that match your criteria.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div><!-- /.section-slider-item -->
-        <div class="section-slider-item asked-item">
-          <div class="section-slider-item-title">
-            What documents do I need to sell my property through Estatein?
-          </div>
-          <p class="section-text">
-            Find out about the necessary documentation for listing your property with us.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div><!-- /.section-slider-item -->
-        <div class="section-slider-item asked-item">
-          <div class="section-slider-item-title">
-            How can I contact an Estatein agent?
-          </div>
-          <p class="section-text">
-            Discover the different ways you can get in touch with our experienced agents.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div><!-- /.section-slider-item -->
-
+    <div class="swiper">
+      <div class="section-slider swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="section-slider-item asked-item">
+            <div class="section-slider-item-title">
+              How do I search for properties on Estatein?
+            </div>
+            <p class="section-text">
+              Learn how to use our user-friendly search tools to find properties that match your criteria.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div><!-- /.section-slider-item -->
+        </div>
+        <div class="swiper-slide">
+          <div class="section-slider-item asked-item">
+            <div class="section-slider-item-title">
+              What documents do I need to sell my property through Estatein?
+            </div>
+            <p class="section-text">
+              Find out about the necessary documentation for listing your property with us.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div><!-- /.section-slider-item -->
+        </div>
+        <div class="swiper-slide">
+          <div class="section-slider-item asked-item">
+            <div class="section-slider-item-title">
+              How can I contact an Estatein agent?
+            </div>
+            <p class="section-text">
+              Discover the different ways you can get in touch with our experienced agents.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div><!-- /.section-slider-item -->
+        </div>
+        <div class="swiper-slide">
+          <div class="section-slider-item asked-item">
+            <div class="section-slider-item-title">
+              What documents do I need to sell my property through Estatein?
+            </div>
+            <p class="section-text">
+              Find out about the necessary documentation for listing your property with us.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div><!-- /.section-slider-item -->
+        </div>
       </div><!-- /.section-slider -->
+
       <div class="section-slider__swipe">
         <a href="#" class="btn desktop-hide">View All FAQ’s</a>
          <div class="swipe-content">
           <div class="swipe swipe_l">
             <i class="fa-solid fa-arrow-left"></i>
           </div>
-          <span>01 of 60</span>
+          <span class="custom-swiper-pagination"></span>
           <div class="swipe swipe_r">
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
       </div>
+    </div><!-- /.swiper -->
+
     </div><!-- /.container -->
   </section>
 
@@ -523,11 +626,9 @@
           <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
-        <div class="footer-info-social-item">
-          <a href="#">
+        <a href="#" class="footer-info-social-item">
           <i class="fa-brands fa-twitter"></i>
-          </a>
-        </div>
+        </a>
         <div class="footer-info-social-item">
           <a href="#">
           <i class="fa-brands fa-youtube"></i>
@@ -542,7 +643,10 @@
   </div>
 </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script/script.js"></script>
+
   </body>
   </html>
+
+
