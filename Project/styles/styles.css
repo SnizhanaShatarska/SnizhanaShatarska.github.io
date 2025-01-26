@@ -139,6 +139,7 @@ ul {
 .header-banner-title {
   font-size: .75rem;
   font-weight: 500;
+  margin-right: 26px;
 }
 
 .header-banner-title a {
@@ -186,6 +187,11 @@ header .container {
   width: 21px;
   height: 14px;
   background: url(../images/bars.svg) center no-repeat;
+  cursor: pointer;
+}
+
+#burgerIcons i {
+  cursor: pointer;
 }
 
 .mobile-menu-list {
@@ -258,7 +264,6 @@ header.fixed .mobile-menu-list {
 
 /*----- first-screen ------*/
 .first-screen-img {
-  position: relative;
   margin-top: 40px;
   width: 100%;
   min-height: 302px;
@@ -283,11 +288,12 @@ header.fixed .mobile-menu-list {
   background-image: url(../images/dydp-icon.png);
   background-size: cover;
   position: absolute;
+  top: -130px;
   left: 0;
-  bottom: -50px;
 }
 
 .first-screen-content {
+  position: relative;
   margin: 56px 0 40px;
 }
 
@@ -495,6 +501,10 @@ header.fixed .mobile-menu-list {
   text-overflow: ellipsis;
 }
 
+.property-item {
+  min-height: 506px;
+}
+
 .property-img {
   width: 100%;
   max-height: 210px;
@@ -664,7 +674,10 @@ header.fixed .mobile-menu-list {
   justify-content: space-between;
 }
 
-/*
+.asked-item .section-slider-item-title {
+  margin-bottom: 0;
+}
+
 .asked-item p.section-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -672,7 +685,6 @@ header.fixed .mobile-menu-list {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-*/
 
 .asked-item {
   min-height: 242px;
@@ -760,6 +772,22 @@ footer form input {
   background-position: 20px center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
+}
+.footer-form form {
+  position: relative;
+}
+.footer-form form button {
+  background-image: url(../images/btn-submit.svg);
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%)
 }
 
 .footer-form {
@@ -1016,8 +1044,9 @@ footer form input {
   .first-screen-icon {
     width: 129px;
     height: 129px;
-    top: 95px;
-    left: -64px;
+    top: 0;
+    right: -120px;
+    left: auto;
   }
 
   .first-screen-content h1.section-title {
@@ -1131,7 +1160,6 @@ footer form input {
   }
 
   .section-slider-item {
-/*    width: calc(33.333333% - 15px);*/
     padding: 30px;
   }
 
@@ -1156,7 +1184,7 @@ footer form input {
     margin-right: 10px;
   }
 
-  .swipe i:hover {
+  .swipe:hover {
     color: var(--medium-color);
   }
 
@@ -1167,6 +1195,10 @@ footer form input {
   }
 
   /*----- property ------*/
+  .property-item {
+    min-height: 549px;
+  }
+
   .property-img {
     max-height: 255px;
     margin-bottom: 20px;
@@ -1348,15 +1380,11 @@ footer form input {
 
   .footer-info-social-item:hover {
     box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 1);
+    color: var(--medium-color);
   }
 
   .footer-info-social-item i {
     font-size: 1rem;
-    transition: .3s;
-  }
-
-  .footer-info-social-item i:hover {
-    color: var(--medium-color);
   }
 
   .footer-info-copyright {
@@ -1463,8 +1491,7 @@ footer form input {
   .first-screen-icon {
     width: 175px;
     height: 175px;
-    top: 144px;
-    left: -87px;
+    right: -160px;
   }
 
   .first-screen-content h1.section-title {
@@ -1567,6 +1594,10 @@ footer form input {
   }
 
   /*----- property ------*/
+  .property-item {
+    min-height: 692px;
+  }
+
   .property-img {
     max-height: 318px;
     margin-bottom: 30px;
@@ -1691,6 +1722,12 @@ footer form input {
     border-radius: 12px;
     background-position: 24px center;
     background-size: 24px 24px;
+  }
+
+  .footer-form form button {
+    width: 30px;
+    height: 30px;
+    right: 24px;
   }
 
   footer > div.container:first-of-type {

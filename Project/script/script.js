@@ -10,6 +10,13 @@ burgerIcons.addEventListener('click', () => {
   closeIcon.classList.toggle('hide')
 });
 
+const headerBanner = document.getElementById('headerBanner');
+const closeIconBanner = document.getElementById('closeIconBanner');
+closeIconBanner.addEventListener('click', () => {
+  headerBanner.classList.toggle('hide')
+});
+
+
 /*swiper*/
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
